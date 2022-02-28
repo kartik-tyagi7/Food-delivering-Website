@@ -1,0 +1,263 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo 2', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* css variables */
+/* :root{
+    --navbar-height:50px;
+} */
+
+
+/* navigation bar */
+#navbar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    
+}
+
+
+/* navigation bar: logo and image */
+#logo{
+    margin: 10px 13px;
+}
+
+#logo img{
+    height: 60px;
+    width: 60px;
+}
+
+
+/* navigation bar: list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    /* margin: 0px 10px; */
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px;
+    /* border:2px solid black; */
+    border-radius: 30px;
+    padding: 4px 15px;
+    font-family: 'Baloo 2', cursive;
+
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    transition-duration: .5s;
+   
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 535px;
+    padding: 10px 250px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background:url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:90%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+
+
+
+/* services section */
+#services{
+    /* margin: 30px; */
+    display: flex;
+
+}
+
+#services .box{
+    border: 2px solid rgb(194, 61, 61);
+    background-color: rgb(224, 187, 187);
+    border-radius: 10px;
+    margin: 10px 30px;
+    height: 400px;
+    padding: 50px;
+}
+#services .box:hover{
+    box-shadow: 10px 10px 5px rgb(180, 174, 174);
+    transition-duration: .2s;
+}
+#services .box img{
+    height: 140px;
+    display: block;
+    margin: auto;
+}
+
+/* client section */
+#client-section{
+    position: relative;
+    /* height: 350px; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../bg.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    opacity: 0.6;
+
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+   height: 70px;
+}
+.client-item{
+    padding: 15px 30px;
+}
+
+
+/* contact-section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../contact.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input{
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    border:1px solid black;
+    outline: none;
+
+}
+
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact-box textarea{
+    width: 93%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    outline: none;
+
+}
+
+#contact-submit{
+    width: 100%;
+    margin: 20px 0px;
+    border-radius: 15px;
+    border:1px solid black;
+    outline: none;
+}
+
+#contact-submit:hover{
+    background-color: rgb(36, 136, 202);
+    transition-duration: .3s;
+    color: white;
+    outline: none;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+}
+
+
+/* utility class */
+.h-primary{
+    font-size: 3rem;
+    padding: 15px;
+    margin: 15px 10px;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 15px;
+}
+.btn{
+    padding: 8px 22px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: rgb(212, 129, 129);
+    color:black;
+    margin: 43px 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: brown;
+    color: white;
+    transition-duration: .5s ;
+}
+
+.centre{
+    text-align: center;
+}
+
+
